@@ -18,6 +18,14 @@ These devices are the hosts forming the interface between users and the unseen c
 * Security cameras
 * Mobile devices (such as smart phones, tablets, PDAs, and wireless debit/credit card readers and barcode scanners)
 
+### INTERMEDIATE DEVICES:
+These are network nodes that connect end devices (like laptops and servers) to a network, managing the flow of data behind the scenes to ensure secure, efficient, and reliable communication. 
+
+#### Examples:
+* **Router:** A device used as a means to connect networks together and transmit data between them through the process of routing.
+* **Switch:** A dedicated device within a network to connect(aggregate) multiple other devices by controlling the flow of data, sending it to its specific destination. It uses "packet-switching" to breakdown large chunks of data into smaller, manageable pieces of data called "packets". Its purpose is to avoid "traffic-jams" between the data packets.
+* **Other devices** like firewall appliance, integrated router, LAN switch etc.
+
 ## ISP Connectivity Options:
 
 ### ISP (Internet Service Provider):
