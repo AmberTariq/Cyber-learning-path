@@ -27,7 +27,7 @@ Today, with billions of people owning multiple phones, laptops, and smart device
 ### 5. IPv6 (Internet Protocol version 6) 
    This is a replacement. It uses a 128-bit address format. 
 
-* **Format:** Eight groups of four hexadecimal characters separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334). 
+* **Format:** Eight groups of four hexadecimal characters separated by colons (e.g. 2001:0db8:85a3:0000:0000:8a2e:0370:7334). 
 
 * **Capacity:** It can create 340 undecillion addresses (that’s a 340 followed by 36 zeros). 
 
