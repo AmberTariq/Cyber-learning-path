@@ -5,6 +5,7 @@ It's fair to say that Linux is a lot more intimidating to approach than Operatin
 * Car entertainment/control panels
 * Point of Sale (PoS) systems such as checkout tills and registers in shops
 * Critical infrastructures such as traffic light controllers or industrial sensors
+<img width="308" height="300" alt="image" src="https://github.com/user-attachments/assets/1a45bfc1-2dab-4fe5-910a-0f41dcc2e7d1" />
 
 ## Flavours of Linux
 The name "Linux" is actually an umbrella term for multiple OS's that are based on UNIX (another operating system). Thanks to Linux being open-source, variants of Linux come in all shapes and sizes - suited best for what the system is being used for.
