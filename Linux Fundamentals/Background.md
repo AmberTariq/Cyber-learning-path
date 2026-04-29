@@ -1,3 +1,5 @@
+## What is Linux?
+Linux is a free, open-source, Unix-like operating system kernel first released by Linus Torvalds in 1991. It is a command line operating system based on unix. There are multiple operating systems that are based on Linux.
 ## Where is Linux Used?
 It's fair to say that Linux is a lot more intimidating to approach than Operating System's (OSs) such as Windows. Both variants have their own advantages and disadvantages. For example, Linux is considerably much more lightweight and you'd be surprised to know that there's a good chance you've used Linux in some form or another every day! Linux powers things such as:
 
