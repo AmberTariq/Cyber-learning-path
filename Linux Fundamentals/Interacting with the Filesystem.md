@@ -32,3 +32,27 @@ It's easy to lose track of where we are on the filesystem exactly, which is why 
 Using the example machine from before, we are currently in the "Documents" folder — but where is this exactly on the Linux machine's filesystem? We can find this out using this "pwd" command like within the screenshot below:  
 <img width="475" height="127" alt="image" src="https://github.com/user-attachments/assets/75aa513c-6776-4757-8dca-6ec1760e7136" />
 
+# Searching for files
+## Using Find
+The find command is fantastic in the sense that it can be used both very simply or rather complex depending upon what it is you want to do exactly. However, let's stick to the fundamentals first.
+Take the snippet below; we can see a list of directories available to us:
+<img width="510" height="121" alt="image" src="https://github.com/user-attachments/assets/0569a6c8-97d4-4463-9ec7-1f257c263f60" />
+
+Now, of course, directories can contain even more directories within themselves. It becomes a headache when we're having to look through every single one just to try and look for specific files. We can use **find** to do just this for us!  
+There are two cases:
+* We know the exact file name we're looking for. Let's say in this case, we're looking for "passwords.txt". We can simply use **find -name passwords.txt** where the command will look through every folder in our current directory for that specific file like so:
+  <img width="510" height="144" alt="image" src="https://github.com/user-attachments/assets/76c497e9-772c-485d-b17d-380d75cc23e6" />
+
+* We don't remember the exact file name but we know its format. Let's say we're looking for a *.txt* file. We can simply use what's known as a wildcard (*) to search for anything that has .txt at the end. In our case, we want to find every .txt file that's in our current directory. We will construct a command such as **find -name *.txt*** . Where "Find" has been able to find every .txt file and has then given us the location of each one:
+<img width="510" height="146" alt="image" src="https://github.com/user-attachments/assets/77eeb0f8-cb7e-404d-ba32-95c715102d9c" />
+
+## Using Grep
+Another great utility that is a great one to learn about is the use of *grep*. The grep command allows us to search the contents of files for specific values that we are looking for.
+
+Take for example, the access log of a web server. In this case, the access.log of a web server has 244 entries.
+<img width="510" height="129" alt="image" src="https://github.com/user-attachments/assets/3051bfdb-cc99-48a1-a812-19cdf1303d50" />
+Using a command like cat isn't going to cut it too well here. Let's say for example if we wanted to search this log file to see the things that a certain user/IP address visited? Looking through 244 entries isn't all that efficient considering we want to find a specific value.
+
+We can use grep to search the entire contents of this file for any entries of the value that we are searching for. Going with the example of a web server's access log, we want to see everything that the IP address "81.143.211.90" has visited (note that this is fictional)
+<img width="1200" height="119" alt="image" src="https://github.com/user-attachments/assets/3112b0c3-fece-4b45-8ce5-a8a6d4d8457c" />
+"Grep" has searched through this file and has shown us any entries of what we've provided and that is contained within this log file for the IP.
