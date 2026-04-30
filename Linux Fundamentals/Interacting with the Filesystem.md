@@ -56,3 +56,18 @@ Using a command like cat isn't going to cut it too well here. Let's say for exam
 We can use grep to search the entire contents of this file for any entries of the value that we are searching for. Going with the example of a web server's access log, we want to see everything that the IP address "81.143.211.90" has visited (note that this is fictional)
 <img width="1200" height="119" alt="image" src="https://github.com/user-attachments/assets/3112b0c3-fece-4b45-8ce5-a8a6d4d8457c" />
 "Grep" has searched through this file and has shown us any entries of what we've provided and that is contained within this log file for the IP.
+## Searching Recursively with grep
+Sometimes, the information we are looking for is spread across multiple files inside a directory. Instead of checking each file individually, we can tell grep to search recursively through all files and subdirectories.
+
+To do this, we use the -R (recursive) option.
+For example, to search for a variable across all files in the current directory and its subfolders, we can run:
+<img width="294" height="46" alt="image" src="https://github.com/user-attachments/assets/0f15c463-f14b-453d-b87e-215ea15065f8" />
+This will:
+
+* Search every file in the current directory
+* Search all subdirectories
+* Show where the PRETTY_NAME appears
+
+**Example output:**
+<img width="389" height="85" alt="image" src="https://github.com/user-attachments/assets/e060dd89-21b2-4b0a-bafc-304a8a81b9a6" />
+The file path is shown before the matching line, making it easy to identify where the result was found.
