@@ -71,3 +71,60 @@ This will:
 **Example output:**
 <img width="389" height="85" alt="image" src="https://github.com/user-attachments/assets/e060dd89-21b2-4b0a-bafc-304a8a81b9a6" />
 The file path is shown before the matching line, making it easy to identify where the result was found.
+
+## Creating Files and Folders (touch, mkdir):
+
+Creating files and folders on Linux is a simple process. First, we’ll cover creating a file. The touch command takes exactly one argument — the name we want to give the file we create. For example, we can create the file “note” by using touch note. It's worth noting that touch simply creates a blank file. You would need to use commands like echo or text editors such as nano to add content to the blank file.
+
+### Using touch to create a new file:
+<img width="395" height="93" alt="image" src="https://github.com/user-attachments/assets/6ec88865-9328-4f68-8ffd-17d73e1de899" />
+
+This is a similar process for making a folder, which just involves using the mkdir command and again providing the name that we want to assign to the directory. For example, creating the directory "mydirectory" using mkdir mydirectory.
+
+### Creating a new directory with mkdir:
+<img width="353" height="114" alt="image" src="https://github.com/user-attachments/assets/84879808-f53a-4252-a067-2cd92396e367" />
+
+## Removing Files and Folders (rm):
+
+rm is extraordinary out of the commands that we've covered so far. You can simply remove files by using rm. However, you need to provide the -R switch alongside the name of the directory you wish to remove.
+
+### Using rm to remove a file
+<img width="353" height="94" alt="image" src="https://github.com/user-attachments/assets/bec319b2-cf6a-4822-ac28-ddbb6e267990" />
+
+### Using rm recursively to remove a directory
+<img width="353" height="104" alt="image" src="https://github.com/user-attachments/assets/fd5d127b-3608-4ae5-af95-4dd9816886ea" />
+
+## Copying and Moving Files and Folders (cp, mv):
+
+Copying and moving files is an important functionality on a Linux machine. Starting with cp, this command takes two arguments:
+
+    1.  the name of the existing file
+
+    2. the name we wish to assign to the new file when copying
+
+cp copies the entire contents of the existing file into the new file. In the screenshot below, we are copying "note" to "note2".
+
+### Using cp to copy a file
+<img width="353" height="97" alt="image" src="https://github.com/user-attachments/assets/af51f2bd-c961-4058-9ff2-a5405a24999a" />
+
+Moving a file takes two arguments, just like the cp command. However, rather than copying and/or creating a new file, mv will merge or modify the second file that we provide as an argument. Not only can you use mv to move a file to a new folder, but you can also use mv to rename a file or folder. For example, in the screenshot below, we are renaming the file "note2" to be named "note3". "note3" will now have the contents of "note2".
+
+### Using mv to move a file
+<img width="353" height="105" alt="image" src="https://github.com/user-attachments/assets/590d71fd-52da-47eb-92f8-731e3f7f20db" />  
+
+## Determining File Type
+
+What is often misleading and often catches people out is making presumptions from files as to what their purpose or contents may be. Files usually have what’s known as an extension to make this easier. For example, text files usually have an extension of “.txt”. But this is not necessary.
+
+So far, the files we have used in our examples haven’t had an extension. Without knowing the context of why the file is there — we don’t really know its purpose. Enter the **file** command. This command takes one argument. For example, we'll use **file** to confirm whether or not the "note" file in our examples is indeed a text file, like so **file note**.
+
+### Using file to determine the contents of a file
+<img width="353" height="90" alt="image" src="https://github.com/user-attachments/assets/7ec14e07-3bab-4c00-90e6-f04f2d55a915" />
+
+
+
+
+
+
+
+
